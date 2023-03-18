@@ -1,34 +1,29 @@
 #include <stdio.h>
 /**
-* main - prints all possible different combinations of 3 digits
+* main - prints all possible different combinations of 2 digits
 *
 * Description: using the main function
-* this program prints "all possible different combinations of 3 digits
+* this program prints "all possible different combinations of 2 digits
 * Return: 0
 */
 int main(void)
 {
-int c = 0;
-int f_d;
-int m_d;
-int l_d;
-while (c <= 999)
+int n, m;
+for (n = 48; n <= 56; n++)
 {
-f_d = (c / 100 + '0');
-m_d = (c / 10 % 10 + '0');
-l_d = (c % 10 + '0');
-if ((f_d < m_d) &&(m_d < l_d))
+for (m = 49; m <= 57; m++)
 {
-putchar(f_d);
-putchar(m_d);
-putchar(l_d);
-if (c != 789)
+if (m > n)
+{
+putchar(n);
+putchar(m);
+if (n != 56 || m != 57)
 {
 putchar(',');
 putchar(' ');
 }
 }
-c++;
+}
 }
 putchar('\n');
 return (0);
