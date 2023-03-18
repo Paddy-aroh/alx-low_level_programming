@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
-* main - print if the  alphabet is in lowercase and then in uppercase
+* main - prints the alphabet
 *
 * Description: using the main function
-* this program prints "Programming if the  alphabet is in lowercase and then in uppercase
+* this program prints "Programming of the alphabet
 * Return: 0
 */
 int main(void)
